@@ -2,12 +2,12 @@ import pug from 'gulp-pug'
 import gulp from 'gulp'
 import sass from 'sass'
 import gsass from 'gulp-sass'
-// import {data} from './fakeData.js'
+import {data} from './config/dataSource.js'
 
 const {src, dest, series, parallel , watch} = gulp
 export function pugTranspile(){
         return src('./src/pages/**/*.pug')
-                .pipe(pug({verbose: true, pretty: true, /* data, */ self:true}))
+                .pipe(pug({verbose: true, pretty: true,  data, self:true}))
                 .pipe(dest('./dist/'))
 }
 

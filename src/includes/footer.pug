@@ -1,9 +1,8 @@
--var footerVars = {"#1":"INICIO", "#2":"SOBRE MI", "#3":"SERVICIOS", "#4":"PROYECTOS", "#5":"CONTACTOS"} 
 footer
     img(src="./assets/logoFooter.png", alt="logo")
     div.footer-links 
         ul
-            each val, key in footerVars
+            each val, key in self.footer
                 li
                     a(href=key)=val
 
