@@ -1,0 +1,15 @@
+-var footerVars = {"#1":"INICIO", "#2":"SOBRE MI", "#3":"SERVICIOS", "#4":"PROYECTOS", "#5":"CONTACTOS"} 
+footer
+    img(src="./assets/logoFooter.png", alt="logo")
+    div.footer-links 
+        ul
+            each val, key in footerVars
+                li
+                    a(href=key)=val
+
+        p 2022 Valeria Marquez
+    div#redes
+        img(src="./assets/behance.svg")
+        img(src="./assets/instagram.svg")
+        img(src="./assets/pinterest.svg")
+        

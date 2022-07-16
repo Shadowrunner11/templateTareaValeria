@@ -1,0 +1,77 @@
+$bg: #F7E9D5
+$primary: #F6BDCC
+$secondary:#434C9A
+$height:124px
+$padding: 8px
+    
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    background: $bg
+    min-width: 100vh
+    font-family: Monserrat, Arial, Helvetica, sans-serif
+
+footer
+    background: $primary
+    position: fixed
+    bottom: 0
+    width: 100%
+    max-height:$height 
+
+nav, footer
+    color: $secondary
+    padding: $padding
+
+nav
+    position: relative
+
+nav ul, .footer-links
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: inline
+    padding-inline-start: 0
+    margin: auto
+
+li
+    list-style: none
+    display: inline
+    padding: $padding
+
+a, a:hover
+    color: $secondary
+    text-decoration: none
+
+#redes
+    height: $height
+    float: right
+    margin: calc($height/4)
+
+#redes img
+    padding: $padding
+
+.footer-links p
+    text-align: center
+
+nav ul > li:first-child
+    font-weight: bolder
+
+header > img:first-child
+    width: 60%
+header > img:last-child
+    min-height: 440px
+    margin-left: calc(8*$padding) 
+    width: 30%
+
+header
+    padding: calc(8*$padding)
+
+hr
+    background: white
+    width: 100%
+    height: $padding
+    border: none
